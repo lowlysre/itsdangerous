@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's dangerous to go alone! Take this.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet" />
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          color: #333;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+      .code-block {
+          background-color: #2d2d2d;
+          border-radius: 8px;
+          overflow: hidden;
+          margin-top: 20px;
+      }
+      .code-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #1e1e1e;
+          padding: 10px;
+      }
+      .tab-buttons {
+          display: flex;
+      }
+      .tab-button {
+          background-color: transparent;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          padding: 5px 10px;
+          font-size: 14px;
+          transition: background-color 0.3s;
+      }
+      .tab-button.active {
+          background-color: #3a3a3a;
+      }
+      .copy-button {
+          background-color: #4a4a4a;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          padding: 5px 10px;
+          font-size: 14px;
+          border-radius: 4px;
+          transition: background-color 0.3s;
+      }
+      .copy-button:hover {
+          background-color: #5a5a5a;
+      }
+      pre {
+          margin: 0;
+          padding: 15px;
+      }
+      .hidden {
+          display: none;
+      }
+  </style>
+</head>
+<body>
+    <h1>It's dangerous to go alone! Take this.</h1>
+    <div class="code-block">
+        <div class="code-header">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-language="javascript">JavaScript</button>
+                <button class="tab-button" data-language="python">Python</button>
+                <button class="tab-button" data-language="java">Java</button>
+                <button class="tab-button" data-language="csharp">C# / C++</button>
+                <button class="tab-button" data-language="r">R</button>
+                <button class="tab-button" data-language="swift">Swift</button>
+                <button class="tab-button" data-language="typescript">TypeScript</button>
+                <button class="tab-button" data-language="go">Go</button>
+            </div>
+            <button class="copy-button">&#128464;</button>
+        </div>
+        <pre class="language-javascript"><code id="javascript-code">
+//   It's dangerous to go
+//    alone! Take this.
+//    🔥   🧙🏽‍♂️   🔥
+//          🗡️
+        </code></pre>
+        <pre class="language-python hidden"><code id="python-code">
+# Python
+print("Hello, World!")
+        </code></pre>
+        <pre class="language-java hidden"><code id="java-code">
+// Java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+        </code></pre>
+        <pre class="language-cpp hidden"><code id="cpp-code">
+// C++
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+        </code></pre>
+        <pre class="language-csharp hidden"><code id="csharp-code">
+// C#
+using System;
+
+class HelloWorld {
+    static void Main() {
+        Console.WriteLine("Hello, World!");
+    }
+}
+        </code></pre>
+        <pre class="language-r hidden"><code id="r-code">
+# R
+print("Hello, World!")
+        </code></pre>
+        <pre class="language-swift hidden"><code id="swift-code">
+// Swift
+print("Hello, World!")
+        </code></pre>
+        <pre class="language-typescript hidden"><code id="typescript-code">
+// TypeScript
+console.log("Hello, World!");
+        </code></pre>
+        <pre class="language-go hidden"><code id="go-code">
+// Go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+        </code></pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-csharp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-r.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-swift.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-go.min.js"></script>
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const codeBlocks = document.querySelectorAll('pre');
+        const copyButton = document.querySelector('.copy-button');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const language = button.dataset.language;
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                codeBlocks.forEach(block => {
+                    if (block.classList.contains(`language-${language}`)) {
+                        block.classList.remove('hidden');
+                    } else {
+                        block.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        copyButton.addEventListener('click', () => {
+            const activeCode = document.querySelector('pre:not(.hidden) code');
+            const textArea = document.createElement('textarea');
+            textArea.value = activeCode.textContent.trim();
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+
+            copyButton.textContent = 'Copied!';
+            setTimeout(() => {
+                copyButton.textContent = 'Copy';
+            }, 2000);
+        });
+        Prism.highlightAll();
+    </script>
+</body>
+</html>
