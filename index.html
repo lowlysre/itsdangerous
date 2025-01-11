@@ -39,6 +39,7 @@
           cursor: pointer;
           padding: 5px 10px;
           font-size: 14px;
+          border-radius: 4px;
           transition: background-color 0.3s;
       }
       .tab-button.active {
@@ -73,7 +74,7 @@
     <div class="code-block">
         <div class="code-header">
             <div class="tab-buttons">
-                <button class="tab-button active" data-language="javascript">JavaScript / TypeScript</button>
+                <button class="tab-button active" data-language="javascript">Java/TypeScript</button>
                 <button class="tab-button" data-language="python">Python</button>
                 <button class="tab-button" data-language="java">Java</button>
                 <button class="tab-button" data-language="csharp">C# / C++</button>
@@ -81,7 +82,7 @@
                 <button class="tab-button" data-language="swift">Swift</button>
                 <button class="tab-button" data-language="go">Go</button>
             </div>
-            <button class="copy-button">&#128464;</button>
+            <button class="copy-button">🗐</button>
         </div>
         <pre class="language-javascript"><code id="javascript-code">
 //   It's dangerous to go
@@ -167,10 +168,10 @@
             document.execCommand('copy');
             document.body.removeChild(textArea);
 
-            copyButton.textContent = 'Copied!';
+            copyButton.textContent = '✓';
             setTimeout(() => {
-                copyButton.textContent = 'Copy';
-            }, 2000);
+                copyButton.textContent = '🗐';
+            }, 1000);
         });
         Prism.highlightAll();
     </script>
