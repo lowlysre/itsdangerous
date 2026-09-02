@@ -2,4 +2,4 @@
 
 It's dangerous to go alone!
 
-https://bit.ly/itsdangeroustogoalone
+https://lowlysre.github.io/itsdangerous/
