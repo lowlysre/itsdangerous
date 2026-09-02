@@ -80,6 +80,9 @@
             <div class="tab-buttons">
                 <button class="tab-button active" data-language="javascript">// (JS/TS, Java, C#/C++, Swift, Go)</button>
                 <button class="tab-button" data-language="python"># (Python, R)</button>
+                <button class="tab-button" data-language="sql">-- (SQL, Lua, Haskell, Ada)</button>
+                <button class="tab-button" data-language="lisp">; (Lisp, Assembly, INI)</button>
+                <button class="tab-button" data-language="latex">% (LaTeX, MATLAB, Prolog)</button>
             </div>
             <button class="copy-button">🗐</button>
         </div>
@@ -95,6 +98,24 @@
 #    🔥   🧙🏽‍♂️   🔥
 #         🗡️
         </code></pre>
+        <pre class="language-sql hidden"><code id="sql-code">
+--   It's dangerous to go
+--    alone! Take this.
+--    🔥   🧙🏽‍♂️   🔥
+--         🗡️
+        </code></pre>
+        <pre class="language-lisp hidden"><code id="lisp-code">
+;   It's dangerous to go
+;    alone! Take this.
+;    🔥   🧙🏽‍♂️   🔥
+;         🗡️
+        </code></pre>
+        <pre class="language-latex hidden"><code id="latex-code">
+%   It's dangerous to go
+%    alone! Take this.
+%    🔥   🧙🏽‍♂️   🔥
+%         🗡️
+        </code></pre>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
@@ -103,6 +124,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-css.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-sql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-lisp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-latex.min.js"></script>
     <script>
         const tabButtons = document.querySelectorAll('.tab-button');
         const codeBlocks = document.querySelectorAll('pre');
